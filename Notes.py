@@ -109,4 +109,50 @@ age = 30
         ##! for x:y, start at index x up to (not including) index y
             # print(name[1:3]) // re
 
-# 1:21:16
+    ##! Booleans
+    #bool - True or False // Note the capitalization
+    #Useful with conditional control like if statements, i.e.
+        # done = True
+        # if done:
+        #   print('yes)
+        # else:
+        #   print('no')
+    # Numbers are always true, but 0 is always false (illustrated above)
+    # Strings are false only when empty, otherwise true
+    # Same for lists, tuples, sets, and dicts
+    # Can check if a value is a boolean
+    # print(type(done) == bool) // true
+
+    # any
+    # book_1_read = True
+    # book_2_read = False
+    ##! any returns true if any iterable is truthy
+    # read_any_book = any([book_1_read, book_2_read]) // True
+
+    # all
+    # ingredients_purchased = True
+    # meal_cooked = False
+    ##! returns true if all iterables are truthy
+    # ready_to_serve = all ([ingredients_purchased, meal_cooked]) // False
+
+    ##! complex numbers
+    # Extension of real number system
+    # Expressed as sum of real part (int) and imaginary part (j)
+    # num1 = 2+3j
+    # or use complex constructor
+        # num2= complex(2,3)
+            # 2 is real part, 3 is imaginary (j)
+        # can get real or imaginary part with:
+            # print(num.real, num.imag) // 2.0 3.0
+    
+    ##! Functions related to numbers
+    # abs()
+        # abs(5.5) // 5.5
+        # abs(-5.5) // 5.5
+    # round()
+        # round(5.5) // 6
+        # round(5.49) // 5
+        # Can specify precision with round(int, #)
+    # A ton of libraries for numbers
+
+    #1:29:40
