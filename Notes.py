@@ -155,4 +155,36 @@ age = 30
         # Can specify precision with round(int, #)
     # A ton of libraries for numbers
 
-    #1:29:40
+##! Enums
+#  Readable names bound to a constant value
+#  Way to create constants in py
+# from enum import Enum
+
+# class State(Enum):
+#     INACTIVE = 0
+#     ACTIVE = 1
+
+    # print(State.ACTIVE) // State.Active
+    # print(State.AVCTIVE.value) // 1
+    # print(State(1)) // State.Active
+    # print(State['ACTIVE']) // State.Active
+    # list all possible values
+        # print(list(State))
+    # count # of values stored
+        # print(len(State))
+
+##! User Input
+##! Code executes up until input then waits for user input
+# print("What's your age?")
+# age = input()
+# print(f'Your age is {age}')
+##! or
+# age = input("What's your age? : ")
+# print(f'Your age is {age}')
+
+##! Control Statements
+    # condition = True
+
+    # if condition == True:
+        # print('The condition')
+        # print('was true')
