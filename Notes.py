@@ -188,3 +188,78 @@ age = 30
     # if condition == True:
         # print('The condition')
         # print('was true')
+    # else:
+        # print('The condition')
+        # print('was False')
+
+##! Lists
+# Slightly different from arrays, list native to python
+    # dogs = ['Roger', 1, 'Syd', True, 'Quincy']
+    ##! in operator
+    # print('Roger' in dogs) // True
+
+    # Can reference items in list by index
+        # print(dogs[0]) // Roger
+
+    # Can update same way with array
+        # dogs[1] = 2
+        # print(dogs) // ['Roger', 2, 'Syd', True, 'Quincy']
+    
+    # extract part of list (slice)
+        # print(dogs[2:4]) // ['Syd', True]
+        ##! print(list[:2]) // start up to 2nd index
+        ##! print(list[2:]) // 2nd index to end
+
+    # append method
+        # dogs.append('Judah') // pushes to end
+    
+    # extend method
+        # dogs.extend(['Test'], 5) // adds list to end
+
+    # += operator
+        # dogs += [list] // same as extend, adds list to end
+
+    ##! don't forget square brackets with extend or +=, otherwise
+    ##! appends each letter in string
+
+    # remove method
+        # dogs.remove('Syd')
+
+    # pop method
+        # same as JS
+        # print(dogs.pop()) // return and remove last item from list
+        # print(dogs) // last value removed
+    
+    # add item at index n
+        # items.instert(2, 'Test') // adds 'Test' to index 2
+
+    # add with slice
+        # items[1:1] = ['Test1', 'Test2'] // inserted multiple items starting at index 1
+    
+    # sorting lists
+        # items.sort() // only works if all items in list are strings (alphabetical)
+        # but begins with upper case first
+        # items.sort(key=str.lower) // 
+        ##! SORTING MUTATES THE LIST
+            # can copy list first
+                # itemscopy = items[:]
+        # sorted(items, key=str.lower)
+        # print(sorted) // sorted creates new list without mutating first
+
+##! Tuples
+    # Allows you to create immutable groups of objects
+    # once created, can't be modified
+    # created similar to list but () instead of []
+
+    # names = ('Roger', 'Syd')
+
+    # print(names[0]) // 'Roger'
+    # print(names.index('Syd')) // 1
+    # print(names[-1]) // 'Roger'
+
+    # can count tuples with len
+        # len(names) // 2
+
+    # print('Roger' in names) // True
+    
+# 1:52:10
