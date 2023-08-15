@@ -251,15 +251,58 @@ age = 30
     # once created, can't be modified
     # created similar to list but () instead of []
 
-    # names = ('Roger', 'Syd')
+names = ('Roger', 'Syd', 'Brendan')
 
     # print(names[0]) // 'Roger'
     # print(names.index('Syd')) // 1
-    # print(names[-1]) // 'Roger'
+    # print(names[-1]) // 'Brendan'
 
     # can count tuples with len
-        # len(names) // 2
+        # len(names) // 3
 
+    # can use in same as lists
     # print('Roger' in names) // True
-    
-# 1:52:10
+
+    # can sort tuple using sorted global function (new tuple)
+
+    # print(sorted(names))
+
+    # create new tuple from existing with + operator
+    # newTuple = names + ('Tina', 'Ned')
+    # print(newTuple)
+
+##! Dictionaries
+    # collection of key-value pairs
+    # similar to JS Objects, but in py:
+        # objects are sequential
+        # Dictionaries are unordered
+    ##! key can be any immutable value (string, number, tuple)
+    ##! value can be anything
+    # note spacing as convention for readability
+dog = { 
+    'name': 'Hohie',
+    'age': 8,
+    }
+    # accessing with bracket notation
+    # dog['name'] = 'Syd'
+    # print(dog)
+
+    # get method with dictionaries
+    # print(dog.get('name')) // Hohie
+
+    # default values with get method
+    # print(dog.get('color')) // none
+    # print(dog.get('color', 'brown')) // brown
+
+    # pop method with dictionaries
+    # print(dog.pop('name')) // Hohie
+    # print(dog) // name: 'Hohie' removed
+
+    # pop item method - removes and returns last k-v pair in dict
+    # print(dog.popitem()) // 'age', 8
+
+    # in operator w/ dict
+    # print('name' in dog) // True
+    # print('size' in dog) // False
+
+    #1:58:37
