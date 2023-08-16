@@ -279,10 +279,10 @@ names = ('Roger', 'Syd', 'Brendan')
     ##! key can be any immutable value (string, number, tuple)
     ##! value can be anything
     # note spacing as convention for readability
-dog = { 
-    'name': 'Hohie',
-    'age': 8,
-    }
+    # dog = { 
+    #     'name': 'Hohie',
+    #     'age': 8,
+    #     }
     # accessing with bracket notation
     # dog['name'] = 'Syd'
     # print(dog)
@@ -305,4 +305,44 @@ dog = {
     # print('name' in dog) // True
     # print('size' in dog) // False
 
-    #1:58:37
+    # keys method 
+    # [dict].keys // prints keys from dict
+    # w/ list (just strings)
+    # list([dict].keys)
+
+    # same can be done with values
+
+    # list([dict].items) // returns k-v pairs in a list
+
+    # adding to dict w/ bracket notation
+    # dog['key'] = 'value' // adds to end of dict
+
+    ##! deleting from dict
+    # del dict['key'] // deletes k-v pair from dict
+
+    # copy a dict
+    # newDict = dict.copy()
+
+##! Sets
+    # work like tuples but aren't ordered and are mutable
+    # or work like dictionaires but don't have keys
+    # immutable set is called a 'frozen' set
+    ##! think of them as mathematical sets
+
+    # set = { 'x', 'y' } 
+    ##! Uses curly brackets like dictionaries but doesn't contain
+    ##! k-v pairs
+
+set1 = {'Brendan', 'Brianna'}
+set2 = {'Brendan'}
+
+    # intersecting two sets
+
+    # intersect = set1 & set2
+    # print(intersect) // {'Brendan'}
+
+    # union of two sets
+
+    # 2:03:46 
+
+
