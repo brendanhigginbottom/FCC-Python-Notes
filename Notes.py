@@ -334,7 +334,7 @@ names = ('Roger', 'Syd', 'Brendan')
     ##! k-v pairs
 
 set1 = {'Brendan', 'Brianna'}
-set2 = {'Brendan'}
+set2 = {'Brendan', 'Keith'}
 
     # intersecting two sets
 
@@ -342,7 +342,13 @@ set2 = {'Brendan'}
     # print(intersect) // {'Brendan'}
 
     # union of two sets
+    # every item in both sets (nonduplicative)
+    # union = set1 | set2
+    # print(union) // {'Brendan', 'Brianna', 'Keith'}
 
-    # 2:03:46 
+    # difference b/w two sets
+    # returns what's in first set that isn't in second
+    # difference = set1 - set2
+    # print(difference) // {'Brianna'}
 
 
