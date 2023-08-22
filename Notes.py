@@ -327,14 +327,16 @@ names = ('Roger', 'Syd', 'Brendan')
     # work like tuples but aren't ordered and are mutable
     # or work like dictionaires but don't have keys
     # immutable set is called a 'frozen' set
+    ##! CANNOT HAVE TWO OF THE SAME ITEM
+        ##! So, you could convert list to set to make sure there's no duplicates
     ##! think of them as mathematical sets
 
     # set = { 'x', 'y' } 
     ##! Uses curly brackets like dictionaries but doesn't contain
     ##! k-v pairs
 
-set1 = {'Brendan', 'Brianna'}
-set2 = {'Brendan', 'Keith'}
+    # set1 = {'Brendan', 'Brianna'}
+    # set2 = {'Brendan', 'Keith'}
 
     # intersecting two sets
 
@@ -351,4 +353,9 @@ set2 = {'Brendan', 'Keith'}
     # difference = set1 - set2
     # print(difference) // {'Brianna'}
 
+    # < and >
+    # Returns true based on comparison 
+    # has everything in other set
+
+##! Functions
 
